@@ -1,0 +1,785 @@
+/*<group=General Styles>*/
+/* the body has a default font set here, however if you use the font variations, this will be overridden by those variation. We have set a font family here so that if the font is not available on a certain broswer it will use this family. */
+body {
+	background: repeat url(images/body_bg.png);
+	margin: 0;
+	color: #f2f2f2;
+	font: 0.85em/1.35em 'Lucida Grande', LucidaGrande, Lucida, Helvetica, Arial, sans-serif;
+	padding: 0;
+}
+
+p {
+}
+
+b, strong {
+
+}
+
+a:link, a:visited {
+	color: #b1b2b3;
+	text-decoration: none;
+	border-bottom: 2px dotted #b1b2b3;
+}
+
+a:hover, a:active {
+	color: #ffffff;
+}
+
+img {
+
+}
+
+.image-left {
+	float: left;
+	margin: 3px 3px 3px 0;
+}
+
+.image-right {
+	float: right;
+	margin: 3px 0 3px 3px;
+}
+	
+/*</group>*/
+
+/*<group=Layout>*/
+.clearer {
+	clear: both;
+}
+
+#top_grad {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 102%;
+	z-index: 0;
+	height: 171px;
+	background: repeat-x url(images/body_top_grad.png);
+}
+
+html > body #top_grad {
+	width: 100%;
+}
+
+#projector {
+	width: 100%;
+	height: 192px;
+	display: none;
+	position: fixed;
+	bottom: 0;
+	z-index: 50;
+}
+
+#eraser {
+	width: 113px;
+	height: 31px;
+	position: absolute;
+	right: 51px;
+	top: 43px;
+	display: none;
+}
+
+#chalk {
+	width: 99px;
+	height: 14px;
+	position: absolute;
+	left: 324px;
+	top: 57px;
+	display: none;
+}
+
+#ruler {
+	width: 28px;
+	height: 415px;
+	position: absolute;
+	top: -356px;
+	right: 213px;
+	display: none;
+}
+
+#container {
+	margin-right: auto;
+	margin-left: auto;
+	width: 803px;
+	position: relative;
+	z-index: 1;
+}
+
+#pageHeader {
+	height: 171px;
+}
+
+#pageHeader img {
+	float: right;
+	margin-right: 10px;
+}
+
+#pageHeader h1 {
+	margin: 0 63px 6px 63px;
+	line-height: 1em;
+	padding-top: 30px;
+	color: #5d8535;
+	font-size: 2.5em;
+}
+
+#pageHeader h2 {
+	color: #4c4c4c;
+	font-weight: normal;
+	font-size: 0.95em;
+	margin: 0 63px 0 65px;
+	text-shadow: 0px 1px 0px #ffffff;
+}
+
+#contentContainer {
+	padding-bottom: 20px;
+	width: 580px;
+	float: left;
+}
+
+#contentContainer #content {
+	padding-right: 20px;
+	padding-left: 63px;
+}
+
+#sidebarContainer {
+	float: right;
+	width: 177px;
+}
+
+#sidebarContainer #sidebar {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#sidebarContainer .sideHeader {
+	font-size: 1.2em;
+}
+
+#footer {
+	height: 175px;
+	width: 803px;
+	position: relative;
+	color: #3f3100;
+	text-shadow: 0px 1px 0px #ffffff;
+}
+
+#footer p {
+	margin: 0;
+	padding-top: 85px;
+	padding-left: 63px;
+}
+
+#footer a:link, #footer a:visited {
+	color: #3f3100;
+	text-decoration: none;
+	border-style: none;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+#footer a:hover, #footer a:active {
+}
+	
+/*</group>*/
+
+/*<group=Bread-crumb>*/
+
+#breadcrumbcontainer {
+	margin-top: 20px;
+	clear: left;
+	margin-right: 43px;
+	margin-left: 43px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#breadcrumbcontainer ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#breadcrumbcontainer li {
+	display: inline;
+}
+
+#breadcrumbcontainer a {
+
+}
+
+#breadcrumbcontainer a:hover {
+
+}
+	
+/*</group>*/
+
+/*<group=Toolbar>*/
+
+/* Toolbar Styles */
+
+#navcontainer {
+	font-size: 1.2em;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#navcontainer #current {
+	font-weight: bold;
+}
+
+#navcontainer #current:hover {
+}
+
+#navcontainer .currentAncestor {
+	color: #b1b2b3;
+	background: no-repeat left center url(images/sub_menu_dash.png);
+}
+
+/* Parent - Level 0 */
+
+#navcontainer ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#navcontainer li {
+}
+
+#navcontainer a {
+	text-decoration: none;
+	color: #ffffff;
+	padding-left: 10px;
+	display: block;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	height: 15px;
+	border-bottom-style: none;
+}
+
+#navcontainer a:hover {
+	color: #b1b2b3;
+}
+
+#navcontainer a:active {
+}
+
+/* Child - Level 1 */
+
+#navcontainer ul ul {
+	margin-left: 15px;
+	margin-bottom: 10px;
+}
+
+#navcontainer ul ul li {
+}
+
+#navcontainer ul ul a {
+	color: #b1b2b3;
+	font-size: 0.9em;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+#navcontainer ul ul a:hover{
+	color: #ffffff;
+}
+
+#navcontainer ul ul #current{
+}
+
+/* Child - Level 2 */
+
+#navcontainer ul ul ul {
+
+}
+
+#navcontainer ul ul ul li { 
+}
+
+#navcontainer ul ul ul a{
+}
+
+#navcontainer ul ul ul a:hover{
+
+}
+
+/* Child Level 3 */
+
+#navcontainer ul ul ul {
+
+}
+
+#navcontainer ul ul ul ul li { 
+}
+
+#navcontainer ul ul ul ul a{
+}
+
+#navcontainer ul ul ul ul a:hover{
+
+}
+
+/* Child Level 4 */
+
+#navcontainer ul ul ul ul {
+
+}
+
+#navcontainer ul ul ul ul ul li { 
+}
+
+#navcontainer ul ul ul ul ul a{
+}
+
+#navcontainer ul ul ul ul ul a:hover{
+
+}
+
+/* Child Level 5 */
+
+#navcontainer ul ul ul ul ul {
+
+}
+
+#navcontainer ul ul ul ul ul ul li { 
+}
+
+#navcontainer ul ul ul ul ul ul a{
+}
+
+#navcontainer ul ul ul ul ul ul a:hover{
+
+}
+
+/*</group>*/
+
+/*<group=Global Classes>*/
+
+blockquote, .standout {
+	color: #333333;
+	margin: 10px 0;
+	padding: 0 10px;
+}
+
+h1 {
+	font-size: 2em;
+	margin: 5px 0;
+}
+
+h2 {
+	font-size: 1.8em;
+	margin: 5px 0;
+}
+
+h3 {
+	font-size: 1.6em;
+	margin: 5px 0;
+}
+
+h4 {
+	font-size: 1.4em;
+	margin: 5px 0;
+}
+
+.imageStyle {
+}
+
+/* Main content area unordered list styles */
+#contentContainer #content ul {
+}
+
+#contentContainer #content li {
+}
+
+/* Sidebar area unordered list styles */
+#sidebarContainer #sidebar ul {
+	margin: 10px;
+	padding: 0 10px;
+}
+
+#sidebarContainer #sidebar li {
+}
+
+/* Table Styles */
+table {
+	font-size: 1em;
+}
+	
+/*</group>*/
+
+/*<group=Blog>*/
+
+/*<group=Archive Page>*/
+
+.blog-archive-background {
+}
+
+.blog-archive-headings-wrapper {
+}
+
+.blog-archive-entries-wrapper {
+}
+
+.blog-archive-entries-wrapper .blog-entry {
+}
+
+.blog-archive-month {
+	margin-bottom: 5px;
+	font-size: 2.5em;
+}
+
+.blog-archive-link {
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+	background: url(images/blog_divider.png) bottom left no-repeat;
+}
+
+.blog-archive-link a:link, .blog-archive-link a:visited {
+}
+	
+/*</group>*/
+
+.blog-entry {
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+	background: url(images/blog_divider.png) bottom left no-repeat;
+}
+
+.blog-entry-title {
+	font-size: 2em;
+	margin-bottom: 15px;
+}
+
+.blog-entry-date {
+	font-size: 1em;
+	color: #b1b2b3;
+	margin-bottom: 15px;
+}
+
+.blog-read-more {
+	display: block;
+	padding-top: 10px;
+}
+
+.blog-entry-summary {
+	margin-bottom: 10px;
+}
+
+.blog-entry-body {
+}
+
+.blog-entry-comments {
+	padding-top: 10px;
+}
+
+/*styles the category link in the main entry */
+.blog-entry-category {
+}
+
+.blog-entry-category a:link, .blog-entry-category a:visited {
+}
+
+/*styles the permalink link in the main entry */
+.blog-entry-permalink {
+}
+
+.blog-entry-permalink a:link, .blog-entry-permalink a:visited {
+}
+
+/* styles the archives in the blog sidebar */
+#blog-archives {
+	margin-bottom: 10px;
+}
+
+.blog-category-link-enabled {
+	line-height: 1.8em;
+	
+}
+
+.blog-category-link-disabled {
+	line-height: 1.8em;
+}
+
+
+/* Styles the blog categories in the blog sidebar */
+#blog-categories {
+	margin-bottom: 10px;
+}
+
+.blog-category-link-enabled {
+}
+
+.blog-category-link-disabled {
+}
+
+/* Styles the blog RSS feeds in the blog sidebar */
+#blog-rss-feeds {
+	margin-bottom: 10px;
+}
+
+.blog-rss-link {
+}
+
+.blog-comments-rss-link {
+}
+
+/*</group>*/
+
+/*<group=File Sharing>*/
+
+.filesharing-description {
+	margin-bottom: 20px;
+}
+
+.filesharing-item {
+	margin-bottom: 20px;
+}
+
+.filesharing-item-title a:link {
+}
+
+.filesharing-item-title a:hover {
+}
+
+.filesharing-item-title a:visited {
+
+}
+
+.filesharing-item-description {
+	padding: 5px;
+}
+
+/*</group>*/
+
+/*<group=Photo Album>*/
+
+/*<group=Index Page (Thumbnail view)>*/
+
+.album-title {
+	font-size: 2em;
+	margin-bottom: 5px;
+}
+
+.album-description {
+	font-size: 1em;
+	color: #b1b2b3;
+	margin-bottom: 75px;
+}
+
+.album-wrapper {
+	display: block;
+	width: 99%;
+	position: relative;
+}
+
+.thumbnail-wrap {
+	text-align: center;
+	position: relative;
+	float: left;
+	margin-bottom: 60px;
+	margin-right: 26px;
+}
+
+.thumbnail-frame {
+	border-style: none;
+	padding: 8px;
+	position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.thumbnail-frame:hover {
+}
+
+.thumbnail-frame a:link, .thumbnail-frame a:visited {
+	border-style: none;
+}
+
+.thumbnail-frame a:hover {
+}
+
+.thumbnail-frame img {
+	padding: 1px;
+	margin: auto;
+}
+
+.thumbnail-caption {
+	font-size: 1em;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 38px;
+	display: block;
+}
+	
+/*</group>*/
+
+/*<group=Single Page (Photo view)>*/
+
+.photo-background {
+	text-align: center;
+	margin: 0;
+}
+
+.photo-navigation {
+	height: 171px;
+	background: url(images/body_top_grad.png) repeat-x;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	text-align: left;
+	padding: 0;
+}
+
+.photo-links {
+	width: 740px;
+	height: 91px;
+	margin: 0 auto;
+	font-size: 0.95em;
+	background: url(images/photo_links_bg.png) no-repeat 0 -6px;
+	padding: 0 0 0 63px;
+}
+
+.photo-navigation a:link, .photo-navigation a:visited {
+
+}
+
+.photo-navigation a:hover {
+	color: #5d8535;
+}
+
+.photo-frame {
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 200px;
+	padding: 10px;
+	background: #fff;
+}
+
+.photo-title {
+	margin: 0px auto 0px auto;
+	color: #5d8535;
+	font-size: 2.5em;
+	width: 740px;
+	height: 37px;
+	background: url(images/photo_title_bg.png) repeat-y 0px 0px;
+	padding: 25px 0 0 63px;
+	position: relative;
+	top: 0;
+	z-index: 12;
+}
+
+
+.photo-caption {
+	color: #4c4c4c;
+	font-size: 0.95em;
+	margin: -4px auto 0 auto;
+	text-shadow: 0px 1px 0px #ffffff;
+	width: 740px;
+	height: 24px;
+	background: repeat url(images/photo_caption_bg.png) 0px 0px;
+	padding: 0 0 0 63px;
+}
+
+html>body .photo-caption {
+	margin-top: 0px;
+}
+/*</group>*/
+	
+/*</group>*/
+
+/*<group=Quicktime Page>*/
+
+.movie-description {
+
+}
+	
+/*</group>*/
+
+/*<group=Quicktime Album>*/
+
+/*<group=Index Page (Movie Thumbnail view)>*/
+
+.movie-page-title {
+	font-size: 2em;
+	margin-bottom: 5px;
+}
+
+.movie-page-description {
+	font-size: 1em;
+	color: #b1b2b3;
+	margin-bottom: 15px;
+}
+
+.movie-thumbnail-frame {
+	width: 132px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	float: left;
+	text-align: center;
+}
+
+.movie-thumbnail-frame a {
+	border: none;
+}
+
+.movie-thumbnail-frame img {
+	border: solid #f0f0f0 1px;
+	padding: 1px;
+}
+
+.movie-thumbnail-frame:hover {
+}
+
+.movie-thumbnail-caption {
+	padding-top: 10px;
+	font-size: 1em;
+}
+	
+/*</group>*/
+
+/*<group=Single Page (Movie View)>*/
+
+.movie-background {
+	background: repeat url(images/blackboard.png);
+	margin-top: 10px;
+	text-align: center;
+}
+
+.movie-title {
+	font-size: 1.45em;
+	background: repeat-x url(images/movie_title_bg.png);
+	height: 34px;
+	color: #3f3100;
+	padding-top: 7px;
+	text-shadow: 0px 1px 0px #ffffff;
+}
+
+.movie-frame {
+
+}
+	
+/*</group>*/
+
+
+/*</group>*/
+
+/*<group=Contact Form>*/
+.message-text {
+} 
+
+.required-text {
+}
+
+.form-input-field {
+}
+
+.form-input-button { 
+} 
+/*</group>*/
+
+

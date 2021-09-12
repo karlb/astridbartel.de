@@ -1,0 +1,5 @@
+/* We are changing all the following items to be set to the sans serif family, each item is seperated by a comma. If you set a different font in the styles.css file to any other item, then you need to add that item to the list here, otherwise that item will not be affected by this font variation option */
+
+body, a:link, a:visited, #pageHeader h1, pageHeader h2, #sidebarContainer .sideHeader, #footer a:link, #footer a:visited, #navcontainer a, h1, h2, h3, h4, .blog-archive-month, .blog-entry-title, .blog-entry-date, .album-title, .album-description, .thumbnail-caption, .photo-title, .photo-caption, .movie-page-title, .movie-page-description, .movie-thumbnail-caption, .photo-title, .photo-caption, .movie-title  {
+	font-family: 'Lucida Grande', LucidaGrande, Lucida, Helvetica, Arial, sans-serif;
+}

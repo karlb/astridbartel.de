@@ -1,0 +1,98 @@
+/* set the bottom margin to the size of the prjector so that the footer links can been seen and clicked on */
+body {
+	color: #191919;
+	margin-bottom: 192px;
+}
+
+a:hover {
+	color: #191919;
+	border-color: #191919;
+}
+
+#container {
+	background: repeat-y url(../../images/projector/content_bg.png) 0px 171px;
+}
+
+#pageHeader {
+	background: repeat-y url(../../images/projector/header_bg.png);
+}
+
+#pageHeader h1 {
+	
+}
+
+#pageHeader h2 {
+	padding-bottom: 30px;
+	margin-right: 63px;
+	border-bottom: 1px solid #606060;
+}
+
+
+#footer {
+	background: no-repeat url(../../images/projector/footer_projector.png) center;
+}
+
+#footer p {
+	padding-top: 85px;
+}
+
+#string {
+	display: none;
+}
+
+#projector {
+	background: url(../../images/projector/projector.png) no-repeat center;
+}
+
+html>body #projector {
+	display: block;
+}
+
+#eraser {
+	background: no-repeat url(../../images/projector/eraser.png);
+	position: absolute;
+	right: 51px;
+	top: 42px;
+}
+
+#chalk {
+	background: url(../../images/projector/chalk.png) no-repeat;
+	position: absolute;
+	left: 324px;
+	top: 57px;
+}
+
+#ruler {
+	background: url(../../images/projector/ruler.png) no-repeat;
+	position: absolute;
+	top: 47px;
+	right: 220px;
+	height: 11px;
+}
+
+.blog-entry {
+	background: none;
+	border-bottom: 1px solid #b3b3b3;
+}
+
+#navcontainer a {
+	background: url(../../images/projector/top_menu_dash.png) no-repeat left center;
+	color: #191919; 
+}
+
+#navcontainer a:hover {
+	background: url(../../images/projector/sub_menu_dash.png) no-repeat left center;
+}
+
+#navcontainer ul ul a {
+	background: url(../../images/projector/sub_menu_dash.png) no-repeat left center;
+}
+
+#navcontainer ul ul a:hover {
+	color: #191919;
+}
+
+.thumbnail-frame img {
+	border: solid gray 1px;
+	padding: 1px;
+}

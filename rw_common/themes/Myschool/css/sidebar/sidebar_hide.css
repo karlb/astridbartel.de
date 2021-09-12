@@ -1,0 +1,16 @@
+#sidebarContainer {
+	display: none;
+}
+
+#contentContainer {
+	width: auto;
+}
+
+#contentContainer #content {
+	padding-right: 63px;
+	padding-left: 63px;
+}
+
+#ruler {
+	display: none;
+}

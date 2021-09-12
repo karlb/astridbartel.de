@@ -1,0 +1,47 @@
+#top_grad {
+	background: repeat-x url(../../images/body_top_grad.png);
+}
+
+#projector {
+	background: url(../../images/projector/projector.png) no-repeat center;
+}
+
+#eraser {
+	background: no-repeat url(../../images/eraser.gif);
+}
+
+#chalk {
+	background: url(../../images/chalk.png) no-repeat;
+}
+
+#ruler {
+	background: url(../../images/ruler.png) no-repeat;
+}
+
+#container {
+	background: repeat-y url(../../images/content_bg.png) 0px 171px;
+}
+
+#pageHeader {
+	background: no-repeat url(../../images/header_bg.png) top;
+}
+
+#footer {
+	background: no-repeat url(../../images/footer_sill.png) center bottom;
+}
+
+#navcontainer a {
+	background: no-repeat left center url(../../images/top_menu_dash.png);
+}
+
+#navcontainer a:hover {
+	background: no-repeat left center url(../../images/sub_menu_dash.png);
+}
+
+#navcontainer ul ul a {
+	background: no-repeat left center url(../../images/sub_menu_dash.png);
+}
+
+.thumbnail-frame img {
+	border: solid #f0f0f0 1px;
+}

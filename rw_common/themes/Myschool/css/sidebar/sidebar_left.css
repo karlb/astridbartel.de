@@ -1,0 +1,22 @@
+#sidebarContainer {
+	float: left;
+	padding-left: 43px;
+	padding-right: 0px;
+}
+
+#contentContainer {
+	float: right;
+}
+
+#contentContainer #content {
+	padding-left: 20px;
+	padding-right: 63px;
+}
+
+#ruler {
+	left: 205px;
+}
+
+#breadcrumbcontainer {
+	margin-left: 265px;
+}

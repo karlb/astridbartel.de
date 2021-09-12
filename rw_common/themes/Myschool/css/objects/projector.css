@@ -1,0 +1,11 @@
+/* set the bottom margin to the size of the prjector so that the footer links can been seen and clicked on */
+body {
+	margin-bottom: 192px;
+}
+#projector {
+	display: none;
+}
+
+html>body #projector {
+	display: block;
+}
