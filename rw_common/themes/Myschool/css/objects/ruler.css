@@ -1,7 +1,0 @@
-#ruler {
-	display: none;
-}
-
-html>body #ruler {
-	display: block;
-}
