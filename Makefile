@@ -3,9 +3,9 @@ build: $(patsubst source/%,build/%,$(shell find source -type f))
 clean:
 	rm -fr build
 
-build/%.html: source/%.html header.html
+build/%.html: source/%.html header.html Makefile
 	@mkdir -p $(dir $@)
-	cat header.html $< > $@
+	sed -E 's|(href="$(subst source,,$<))|class="current" \1|' header.html | cat - $< > $@
 
 build/%: source/%
 	cp $< $@
@@ -23,7 +23,7 @@ deploy:
 
 # dev helpers
 watch:
-	find source header.html | entr make
+	find source header.html Makefile | entr make
 
 serve:
 	python -m http.server -d build
