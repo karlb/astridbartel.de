@@ -14,7 +14,7 @@ build/%: source/%
 # https://sangsoonam.github.io/2019/02/08/using-git-worktree-to-deploy-github-pages.html
 deploy:
 	git worktree add public_html gh-pages
-	cp -rf build/* public_html
+	cp -rf build/* build/.nojekyll public_html
 	cd public_html && \
 	  git add --all && \
 	  git commit -m "Deploy to github pages" && \
